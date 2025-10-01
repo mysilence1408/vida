@@ -7,55 +7,59 @@ const Hero = () => {
   const imgScrollTop = [
     {
       id: 1,
-      src: "/images/img1.webp",
+      src: "/images/hero/1.jpg",
     },
     {
       id: 2,
-      src: "/images/img1.webp",
+      src: "/images/hero/2.jpg",
     },
     {
       id: 3,
-      src: "/images/img1.webp",
+      src: "/images/hero/3.jpg",
     },
     {
       id: 4,
-      src: "/images/img1.webp",
+      src: "/images/hero/4.jpg",
     },
   ];
   const imgScrollMiddle = [
     {
       id: 1,
-      src: "/images/img1.webp",
+      src: "/images/hero/5.jpg",
     },
     {
       id: 2,
-      src: "/images/img1.webp",
+      src: "/images/hero/6.jpg",
     },
     {
       id: 3,
-      src: "/images/img1.webp",
+      src: "/images/hero/7.jpg",
     },
     {
       id: 4,
-      src: "/images/img1.webp",
+      src: "/images/hero/8.jpg",
     },
   ];
   const imgScrollBottom = [
     {
       id: 1,
-      src: "/images/img1.webp",
+      src: "/images/hero/9.jpg",
     },
     {
       id: 2,
-      src: "/images/img1.webp",
+      src: "/images/hero/10.jpg",
     },
     {
       id: 3,
-      src: "/images/img1.webp",
+      src: "/images/hero/11.jpg",
     },
     {
       id: 4,
-      src: "/images/img1.webp",
+      src: "/images/hero/12.jpg",
+    },
+    {
+      id: 5,
+      src: "/images/hero/13.jpg",
     },
   ];
   const imageWidthTop = 500;
