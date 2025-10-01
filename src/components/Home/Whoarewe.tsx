@@ -9,7 +9,7 @@ const Whoarewe = () => {
   // Get scroll progress for the section
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"],
+    offset: ["end end", "end start"],
   });
 
   useEffect(() => {
