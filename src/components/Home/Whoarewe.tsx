@@ -30,17 +30,27 @@ const Whoarewe = () => {
           <div className="lg:w-1/2 h-[600px]">
             <video
               ref={videoRef}
-              src="/videos/ambulance.mp4"
+              src="/videos/xray.mp4"
               muted
               playsInline
               loop={false}
               autoPlay={false}
-              className="h-full w-full object-cover rounded-lg"
+              className="h-full w-full object-cover rounded-lg hidden lg:block"
+            ></video>
+            <video
+              src="/videos/xray.mp4"
+              muted
+              playsInline
+              loop
+              autoPlay
+              className="h-full w-full object-cover rounded-lg block lg:hidden"
             ></video>
           </div>
           <div className="py-16 px-4 gap-4 rounded-lg bg-[#ffa200] flex flex-col justify-between items-center lg:w-1/2 h-auto">
-            <h6>What is Vida Medicals?</h6>
-            <p>
+            <h6 className=" text-3xl lg:text-4xl font-medium">
+              What is Vida Medicals?
+            </h6>
+            <p className=" text-sm lg:text-base">
               Vida Medical is a web-based medical image processing platform made
               in Canada, designed to assist radiologists as an intelligent
               companion.
