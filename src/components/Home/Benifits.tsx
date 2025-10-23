@@ -16,7 +16,7 @@ const Benefits = () => {
           {benefitsData.map((item) => (
             <div key={item.id}>
               <ul className="list-disc pl-5 space-y-1 text-lg lg:text-xl">
-                <span>{item.title}</span>
+                <span className="font-semibold">{item.title}</span>
                 <li>{item.description}</li>
               </ul>
             </div>
