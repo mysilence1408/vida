@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Navbar = () => {
   const [hidden, setHidden] = useState(false);
@@ -51,8 +53,20 @@ const Navbar = () => {
       url: "/contact",
     },
   ];
+
+  useGSAP(() => {
+    gsap.to(".nav", {
+      opacity: "95%",
+      delay: 2,
+      stagger: {
+        amount: 0.5,
+        ease: "easeInOut",
+      },
+    });
+  });
+
   return (
-    <div className=" fixed top-0 z-50 w-full  ">
+    <div className=" fixed top-0 z-[100] w-full">
       <motion.div
         variants={{
           visible: { y: 0 },
@@ -63,7 +77,7 @@ const Navbar = () => {
       >
         <div className="  flex items-center justify-between gap-4  ">
           <Link
-            className="px-6 py-2 rounded-full opacity-90 bg-orange-500 text-white"
+            className="px-6 py-2 rounded-full bg-orange-500 text-white nav opacity-0"
             href="/"
           >
             <Image
@@ -79,7 +93,7 @@ const Navbar = () => {
               <Link
                 key={link.id}
                 href={link.url}
-                className={` px-6 py-2 rounded-full opacity-95 ${
+                className={` px-6 py-2 rounded-full nav opacity-0 ${
                   pathname === link.url
                     ? "bg-black text-white"
                     : "bg-white text-black"
@@ -91,7 +105,7 @@ const Navbar = () => {
           </div>
           <button
             onClick={showMenuHandler}
-            className={`cursor-pointer lg:hidden relative z-50 px-6 py-2 rounded-full opacity-95 ${
+            className={`cursor-pointer lg:hidden relative z-50 px-6 py-2 rounded-full opacity-0 nav ${
               showMenu ? "bg-black text-white" : "bg-white "
             }`}
           >

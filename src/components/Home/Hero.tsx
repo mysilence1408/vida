@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
   const imgScrollTop = [
@@ -80,13 +82,23 @@ const Hero = () => {
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], ["100%", "120%"]);
 
+  useGSAP(() => {
+    gsap.to(".hero", {
+      opacity: 1,
+      delay: 0.5,
+      stagger: {
+        amount: 1,
+      },
+    });
+  });
+
   return (
     <div>
-      <div className="flex flex-col gap-2 overflow-x-hidden">
+      <div className="flex flex-col gap-2 overflow-x-hidden bg-white">
         <div className=" overflow-hidden">
           <motion.div
             ref={ref}
-            className="flex gap-2"
+            className="flex gap-2 hero opacity-0"
             style={{ width: totalWidthTop * 2, scale: scale }}
             animate={{ x: [-0, -totalWidthTop] }}
             transition={{
@@ -112,7 +124,7 @@ const Hero = () => {
         <div className=" overflow-hidden">
           <motion.div
             ref={ref}
-            className="flex gap-2"
+            className="flex gap-2 hero opacity-0"
             style={{ width: totalWidthMiddle * 2, scale: scale }}
             animate={{ x: [-0, -totalWidthMiddle] }}
             transition={{
@@ -136,7 +148,7 @@ const Hero = () => {
           </motion.div>
         </div>
         <motion.div
-          className="flex gap-2"
+          className="flex gap-2 hero opacity-0"
           style={{ width: totalWidthBottom * 2 }}
           animate={{ x: [-0, -totalWidthBottom] }}
           transition={{

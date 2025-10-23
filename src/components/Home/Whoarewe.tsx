@@ -1,5 +1,5 @@
 "use client";
-import { useScroll } from "framer-motion";
+import { useScroll, motion } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 
 const Whoarewe = () => {
@@ -28,7 +28,7 @@ const Whoarewe = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="lg:w-1/2 h-[600px]">
-            <video
+            <motion.video
               ref={videoRef}
               src="/videos/xray.mp4"
               muted
@@ -36,7 +36,7 @@ const Whoarewe = () => {
               loop={false}
               autoPlay={false}
               className="h-full w-full object-cover rounded-lg hidden lg:block"
-            ></video>
+            ></motion.video>
             <video
               src="/videos/xray.mp4"
               muted

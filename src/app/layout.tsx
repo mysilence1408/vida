@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Global/Navbar";
+import { Suspense } from "react";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,11 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#000000" /> {/* Set theme color */}
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f5f5ff] text-black dark:bg-[#202938] dark:text-white`}
       >
-        <Navbar />
-        {children}
+        <Suspense>
+          <ScrollToTop>{children}</ScrollToTop>
+        </Suspense>
       </body>
     </html>
   );
