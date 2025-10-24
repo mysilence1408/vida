@@ -9,59 +9,59 @@ const Hero = () => {
   const imgScrollTop = [
     {
       id: 1,
-      src: "/images/hero/1.jpg",
+      src: "/videos/hero/1.mp4",
     },
     {
       id: 2,
-      src: "/images/hero/2.jpg",
+      src: "/videos//hero/2.mp4",
     },
     {
       id: 3,
-      src: "/images/hero/3.jpg",
+      src: "/videos//hero/3.mp4",
     },
     {
       id: 4,
-      src: "/images/hero/4.jpg",
+      src: "/videos//hero/4.mp4",
     },
   ];
   const imgScrollMiddle = [
     {
       id: 1,
-      src: "/images/hero/5.jpg",
+      src: "/videos//hero/5.mp4",
     },
     {
       id: 2,
-      src: "/images/hero/6.jpg",
+      src: "/videos//hero/6.mp4",
     },
     {
       id: 3,
-      src: "/images/hero/7.jpg",
+      src: "/videos//hero/7.mp4",
     },
     {
       id: 4,
-      src: "/images/hero/8.jpg",
+      src: "/videos//hero/8.mp4",
     },
   ];
   const imgScrollBottom = [
     {
       id: 1,
-      src: "/images/hero/9.jpg",
+      src: "/videos//hero/9.mp4",
     },
     {
       id: 2,
-      src: "/images/hero/10.jpg",
+      src: "/videos//hero/10.mp4",
     },
     {
       id: 3,
-      src: "/images/hero/11.jpg",
+      src: "/videos//hero/11.mp4",
     },
     {
       id: 4,
-      src: "/images/hero/12.jpg",
+      src: "/videos//hero/12.mp4",
     },
     {
       id: 5,
-      src: "/images/hero/13.jpg",
+      src: "/videos//hero/13.mp4",
     },
   ];
   const imageWidthTop = 500;
@@ -109,10 +109,13 @@ const Hero = () => {
           >
             {/* Duplicate the images for seamless looping */}
             {[...imgScrollTop, ...imgScrollTop].map((img, idx) => (
-              <Image
+              <video
                 key={idx}
                 src={img.src}
-                alt="img"
+                autoPlay
+                muted
+                playsInline
+                loop
                 width={imageWidthTop}
                 height={200}
                 style={{ flexShrink: 0 }}
@@ -135,10 +138,13 @@ const Hero = () => {
           >
             {/* Duplicate the images for seamless looping */}
             {[...imgScrollMiddle, ...imgScrollMiddle].map((img, idx) => (
-              <Image
+              <video
                 key={idx}
                 src={img.src}
-                alt="img"
+                autoPlay
+                muted
+                playsInline
+                loop
                 width={imageWidthMiddle}
                 height={100}
                 style={{ flexShrink: 0 }}
@@ -159,10 +165,13 @@ const Hero = () => {
         >
           {/* Duplicate the images for seamless looping */}
           {[...imgScrollBottom, ...imgScrollBottom].map((img, idx) => (
-            <Image
+            <video
               key={idx}
               src={img.src}
-              alt="img"
+              autoPlay
+              muted
+              playsInline
+              loop
               width={imageWidthBottom}
               height={50}
               style={{ flexShrink: 0 }}

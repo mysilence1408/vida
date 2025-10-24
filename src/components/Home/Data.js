@@ -1,32 +1,20 @@
 export const featuresData = [
   {
     id: 1,
-    title: "title",
-    description: "description",
+    title: "One-Click AI Analysis",
+    description: "description1",
     image: "/images/feature1.jpg",
   },
   {
     id: 2,
-    title: "title",
-    description: "description",
+    title: "Secure & Web-Based",
+    description: "description2",
     image: "/images/feature2.jpg",
   },
   {
     id: 3,
-    title: "title",
-    description: "description",
-    image: "/images/feature3.jpg",
-  },
-  {
-    id: 4,
-    title: "title",
-    description: "description",
-    image: "/images/feature3.jpg",
-  },
-  {
-    id: 5,
-    title: "title",
-    description: "description",
+    title: "Image Upload & Analysis",
+    description: "description3",
     image: "/images/feature3.jpg",
   },
 ];

@@ -1,56 +1,73 @@
 "use client";
-import { useScroll, motion } from "framer-motion";
+import { useScroll, useSpring, useMotionValueEvent } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 
 const Whoarewe = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  // Get scroll progress for the section
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["end end", "end start"],
   });
 
+  // ✅ Smooth the scroll progress
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    mass: 0.2,
+  });
+
   useEffect(() => {
-    // Subscribe to scroll progress changes
-    const unsubscribe = scrollYProgress.on("change", (progress) => {
-      const video = videoRef.current;
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleProgress = (progress: number) => {
       if (video && video.duration) {
-        video.currentTime = progress * video.duration;
+        // Use requestAnimationFrame for smoother timing updates
+        requestAnimationFrame(() => {
+          video.currentTime = progress * video.duration;
+        });
       }
-    });
+    };
+
+    const unsubscribe = smoothProgress.on("change", handleProgress);
     return unsubscribe;
-  }, [scrollYProgress]);
+  }, [smoothProgress]);
 
   return (
     <div className="px-2 lg:px-4 pt-8" ref={sectionRef}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="lg:w-1/2 h-[600px]">
-            <motion.video
+            {/* Desktop controlled video */}
+            <video
               ref={videoRef}
-              src="/videos/xray.mp4"
+              src="/videos/founder.mp4"
               muted
               playsInline
               loop={false}
               autoPlay={false}
+              preload="auto"
               className="h-full w-full object-cover rounded-lg hidden lg:block"
-            ></motion.video>
+            />
+            {/* Mobile autoplay version */}
             <video
-              src="/videos/xray.mp4"
+              src="/videos/founder.mp4"
               muted
               playsInline
               loop
               autoPlay
+              preload="auto"
               className="h-full w-full object-cover rounded-lg block lg:hidden"
-            ></video>
+            />
           </div>
-          <div className="py-16 px-4 gap-4 rounded-lg bg-[#ffa200] flex flex-col justify-between items-center lg:w-1/2 h-auto">
-            <h6 className=" text-3xl lg:text-4xl font-medium">
+
+          <div className="py-16 px-4 gap-4 rounded-lg bg-[#1f1f1f] text-white flex flex-col justify-between items-center lg:w-1/2 h-auto">
+            <h6 className="text-3xl lg:text-4xl font-medium">
               What is Vida Medicals?
             </h6>
-            <p className=" text-sm lg:text-base">
+            <p className="text-sm lg:text-base">
               Vida Medical is a web-based medical image processing platform made
               in Canada, designed to assist radiologists as an intelligent
               companion.
