@@ -17,11 +17,11 @@ const ScrollToTop = ({ children }: { children: React.ReactNode }) => {
   }, [pathname, searchParams, lenis]);
 
   return (
-    <ReactLenis root options={{ lerp: 0.09 }}>
+    <div>
       <Navbar />
       {children}
       <Footer />
-    </ReactLenis>
+    </div>
   );
 };
 
