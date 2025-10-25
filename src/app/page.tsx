@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Video />
       <TextScroll />
+      <Video />
       <Features />
       <WhyChoose />
       <Benefits />
