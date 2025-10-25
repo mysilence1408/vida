@@ -11,8 +11,7 @@ const TextScroll = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const words =
-    "Elysium is designed for the man who commands attention without seeking it";
+  const words = "Elysium is designed for the man who commands";
 
   useGSAP(
     () => {
