@@ -73,11 +73,6 @@ const Hero = () => {
   const totalWidthMiddle =
     imgScrollMiddle.length * (imageWidthMiddle + gapMiddle);
 
-  const imageWidthBottom = 300;
-  const gapBottom = 8; // Tailwind gap-2 = 0.5rem = 8px
-  const totalWidthBottom =
-    imgScrollBottom.length * (imageWidthBottom + gapBottom);
-
   const ref = useRef(null);
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], ["100%", "120%"]);
@@ -93,8 +88,8 @@ const Hero = () => {
   });
 
   return (
-    <div>
-      <div className="flex flex-col gap-2 overflow-x-hidden bg-white">
+    <div className=" h-screen min-h-screen bg-white">
+      <div className="flex flex-col gap-2 overflow-x-hidden ">
         <div className=" overflow-hidden">
           <motion.div
             ref={ref}
@@ -152,35 +147,6 @@ const Hero = () => {
               />
             ))}
           </motion.div>
-        </div>
-        <motion.div
-          className="flex gap-2 hero opacity-0"
-          style={{ width: totalWidthBottom * 2 }}
-          animate={{ x: [-0, -totalWidthBottom] }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        >
-          {/* Duplicate the images for seamless looping */}
-          {[...imgScrollBottom, ...imgScrollBottom].map((img, idx) => (
-            <video
-              key={idx}
-              src={img.src}
-              autoPlay
-              muted
-              playsInline
-              loop
-              width={imageWidthBottom}
-              height={50}
-              style={{ flexShrink: 0 }}
-              className=" object-cover object-center"
-            />
-          ))}
-        </motion.div>
-        <div className=" relative -top-10 md:-top-15 lg:-top-30">
-          <img src="/images/white_shadow.webp" className=" w-full" />
         </div>
       </div>
     </div>
