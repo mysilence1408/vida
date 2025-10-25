@@ -27,7 +27,7 @@ const Features: React.FC = () => {
   const closeModal = () => setSelectedFeature(null);
 
   return (
-    <div className="bg-black mt-16 lg:mt-24 relative">
+    <div className="bg-black relative">
       <div className="py-8 max-w-7xl mx-auto text-white px-2 lg:px-4">
         <motion.div
           className="flex flex-col items-center justify-center mb-8 text-center"

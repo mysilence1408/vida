@@ -19,6 +19,8 @@ const Navbar: React.FC = () => {
 
   const showMenuHandler = () => setShowMenu(!showMenu);
 
+  const handleCloseMenu = () => setShowMenu(false);
+
   const { scrollY } = useScroll();
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
@@ -29,8 +31,8 @@ const Navbar: React.FC = () => {
 
   const Links = [
     { id: 1, name: "Home", url: "/" },
-    { id: 2, name: "Brands", url: "/brands" },
-    { id: 3, name: "About", url: "/about" },
+    { id: 2, name: "About", url: "/about" },
+    { id: 3, name: "News", url: "/news" },
     { id: 4, name: "Contact", url: "/contact" },
   ];
 
@@ -137,6 +139,7 @@ const Navbar: React.FC = () => {
                     pathname === link.url &&
                     "bg-black px-6 py-2 text-white rounded-full"
                   }`}
+                  onClick={handleCloseMenu}
                 >
                   {link.name}
                 </Link>

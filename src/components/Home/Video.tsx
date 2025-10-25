@@ -22,13 +22,13 @@ const Video = () => {
             style={{ opacity: opacity, translateY: y }}
             className=" pb-8 lg:pb-16 text-4xl lg:text-5xl font-medium"
           >
-            Design and launch outstanding websites
+            What is Vida Medicals?
           </motion.h3>
           <motion.div
             style={{ scale: scale }}
-            className=" flex flex-col lg:flex-row gap-4  bg-[#e7e7e7] rounded-lg"
+            className=" flex flex-col xl:flex-row gap-4  bg-[#e7e7e7] rounded-lg"
           >
-            <div className=" lg:w-4/5 relative">
+            <div className=" xl:w-4/5 relative">
               <video
                 src="/videos/intro.mp4"
                 autoPlay
@@ -36,7 +36,7 @@ const Video = () => {
                 playsInline
                 loop
                 controls={!muted}
-                className=" rounded-r-lg rounded-l-lg lg:rounded-r-none lg:rounded-l-lg"
+                className=" rounded-r-lg rounded-l-lg lg:rounded-r-none lg:rounded-l-lg object-cover h-full w-full"
               ></video>
               <button
                 className=" absolute top-5 left-5 bg-white rounded-full p-1 lg:p-3 cursor-pointer"
@@ -49,19 +49,18 @@ const Video = () => {
                 )}
               </button>
             </div>
-            <div className=" lg:w-1/5 flex flex-col justify-between py-6 px-2 gap-4">
-              <h6 className=" text-3xl lg:text-4xl font-medium">
-                Enjoy easy workflow
-              </h6>
+            <div className=" xl:w-1/5 py-6 px-2 gap-4">
               <p className=" text-sm lg:text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                alias enim voluptates possimus ipsa, ex illum voluptate modi
-                minima earum ab maiores eos deserunt exercitationem consectetur
-                quisquam corporis obcaecati assumenda.
+                Vida Medical is a Canadian web-based platform that assists
+                radiologists with intelligent medical image processing. It
+                integrates seamlessly into clinical workflows, using advanced AI
+                to enhance the accuracy, speed, and security of mammography
+                diagnostics.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                alias enim voluptates possimus ipsa, ex illum voluptate modi
+                Developed by Dr. Naeem Komeilipoor and his team, Vida builds on
+                years of innovation in AI, imaging, and medical technology —
+                including breakthroughs from AAVAA and Findora.
               </p>
             </div>
           </motion.div>
