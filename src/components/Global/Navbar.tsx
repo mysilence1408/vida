@@ -72,12 +72,9 @@ const Navbar: React.FC = () => {
         className="px-2 lg:px-4 pt-2 lg:pt-4"
       >
         <div className="flex items-center justify-between gap-4">
-          <Link
-            className="px-4 py-1 rounded-full bg-white nav opacity-0"
-            href="/"
-          >
+          <Link className="nav opacity-0" href="/">
             <Image
-              src="/images/logo.webp"
+              src="/images/logo.png"
               alt="logo"
               width={90}
               height={90}
@@ -93,7 +90,7 @@ const Navbar: React.FC = () => {
                 href={link.url}
                 className={`px-6 py-2 rounded-full nav opacity-0 ${
                   pathname === link.url
-                    ? "bg-black text-white"
+                    ? "bg-[#FF0066] text-white"
                     : "bg-white text-black"
                 }`}
               >

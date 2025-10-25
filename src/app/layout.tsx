@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#000000" /> {/* Set theme color */}
+        <meta name="theme-color" content="#FF0066" /> {/* Set theme color */}
       </head>
       <body
         className={`${sedgewick.className} antialiased bg-[#f5f5ff] text-black dark:bg-[#202938] dark:text-white`}

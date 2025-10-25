@@ -4,7 +4,7 @@ import handImg from "@/../public/images/hand.jpg";
 import { benefitsData } from "./Data";
 const Benefits = () => {
   return (
-    <div className=" min-h-screen overflow-hidden flex flex-col lg:flex-row gap-10 bg-[#f1f1f1]">
+    <div className=" min-h-screen overflow-hidden flex flex-col lg:flex-row gap-10 bg-[#c5b198]">
       <div className=" lg:w-1/2">
         <Image src={handImg} alt="handImg" className=" object-cover h-screen" />
       </div>

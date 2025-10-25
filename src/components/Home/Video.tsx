@@ -11,19 +11,23 @@ const Video = () => {
     offset: ["start end", "end end"],
   });
 
+  const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
   const y = useTransform(scrollYProgress, [0, 1], [-30, 0]);
   return (
-    <div className=" bg-white">
+    <div>
       <div ref={containerRef} className="px-2 lg:px-4 pb-8 lg:pt-16 lg:pb-16">
         <div className=" max-w-7xl mx-auto">
           <motion.h3
             style={{ opacity: opacity, translateY: y }}
-            className=" pb-8 lg:pb-16 text-4xl lg:text-5xl font-medium"
+            className=" pb-8 lg:pb-16 text-4xl lg:text-5xl font-medium text-white"
           >
             What is Vida Medicals?
           </motion.h3>
-          <div className=" flex flex-col xl:flex-row gap-4  bg-[#e7e7e7] rounded-lg">
+          <motion.div
+            style={{ scale: scale }}
+            className=" flex flex-col xl:flex-row gap-4  bg-white rounded-lg"
+          >
             <div className=" xl:w-4/5 relative">
               <video
                 src="/videos/intro.mp4"
@@ -59,7 +63,7 @@ const Video = () => {
                 including breakthroughs from AAVAA and Findora.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

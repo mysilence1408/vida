@@ -9,7 +9,7 @@ const AboutBottom = () => {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["50% end", "end start"],
+    offset: ["50% end", "90% start"],
   });
 
   // ✅ Smooth the scroll progress
@@ -36,7 +36,7 @@ const AboutBottom = () => {
     return unsubscribe;
   }, [smoothProgress]);
   return (
-    <div className=" pt-8 lg:pt-16 px-2 lg:px-4" ref={sectionRef}>
+    <div className=" py-8 lg:py-16 px-2 lg:px-4" ref={sectionRef}>
       <div className=" flex items-center justify-center mb-8">
         <Image
           src={botGif}

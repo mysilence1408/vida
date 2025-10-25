@@ -42,28 +42,7 @@ const Hero = () => {
       src: "/videos//hero/8.mp4",
     },
   ];
-  const imgScrollBottom = [
-    {
-      id: 1,
-      src: "/videos//hero/9.mp4",
-    },
-    {
-      id: 2,
-      src: "/videos//hero/10.mp4",
-    },
-    {
-      id: 3,
-      src: "/videos//hero/11.mp4",
-    },
-    {
-      id: 4,
-      src: "/videos//hero/12.mp4",
-    },
-    {
-      id: 5,
-      src: "/videos//hero/13.mp4",
-    },
-  ];
+
   const imageWidthTop = 500;
   const gapTop = 8; // Tailwind gap-2 = 0.5rem = 8px
   const totalWidthTop = imgScrollTop.length * (imageWidthTop + gapTop);
@@ -88,8 +67,8 @@ const Hero = () => {
   });
 
   return (
-    <div className=" h-screen min-h-screen bg-white">
-      <div className="flex flex-col gap-2 overflow-x-hidden ">
+    <div className=" h-screen min-h-screen bg-black">
+      <div className="flex flex-col gap-2 overflow-x-hidden">
         <div className=" overflow-hidden">
           <motion.div
             ref={ref}
