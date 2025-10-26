@@ -33,7 +33,9 @@ const AboutTop = () => {
           About us
         </h1>
       </div>
-
+      <h3 className=" px-4 lg:px-8 text-2xl lg:text-4xl mb-8">
+        AI Capabilities
+      </h3>
       <div
         ref={containerRef}
         className="carousel flex gap-4 w-max will-change-transform"

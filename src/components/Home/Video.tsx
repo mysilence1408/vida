@@ -26,7 +26,7 @@ const Video = () => {
           </motion.h3>
           <motion.div
             style={{ scale: scale }}
-            className=" flex flex-col xl:flex-row gap-4  bg-white rounded-lg"
+            className=" flex flex-col xl:flex-row gap-4 text-black bg-white rounded-lg"
           >
             <div className=" xl:w-4/5 relative">
               <video
@@ -36,7 +36,7 @@ const Video = () => {
                 playsInline
                 loop
                 controls={!muted}
-                className=" rounded-r-lg rounded-l-lg lg:rounded-r-none lg:rounded-l-lg object-cover h-full w-full"
+                className=" rounded-r-lg rounded-l-lg rounded-b-none lg:rounded-r-none lg:rounded-l-lg object-cover h-full w-full"
               ></video>
               <button
                 className=" absolute top-5 left-5 bg-white rounded-full p-1 lg:p-3 cursor-pointer"

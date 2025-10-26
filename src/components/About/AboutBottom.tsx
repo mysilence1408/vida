@@ -36,7 +36,7 @@ const AboutBottom = () => {
     return unsubscribe;
   }, [smoothProgress]);
   return (
-    <div className=" py-8 lg:py-16 px-2 lg:px-4" ref={sectionRef}>
+    <div className=" pt-18 lg:pt-28 pb-16 px-2 lg:px-4" ref={sectionRef}>
       <div className=" flex items-center justify-center mb-8">
         <Image
           src={botGif}
@@ -73,7 +73,7 @@ const AboutBottom = () => {
             />
           </div>
 
-          <div className="py-16 px-4 gap-4 rounded-lg bg-[#1f1f1f] text-white flex flex-col justify-between items-center lg:w-1/2 h-auto">
+          <div className="py-16 px-4 gap-4 rounded-lg bg-white text-black flex flex-col justify-between items-center lg:w-1/2 h-auto">
             <h6 className="text-3xl lg:text-4xl font-medium">
               What is Vida Medicals?
             </h6>

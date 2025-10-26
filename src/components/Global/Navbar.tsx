@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
           <button
             onClick={showMenuHandler}
             className={`cursor-pointer lg:hidden relative z-50 px-6 py-2 rounded-full opacity-0 nav ${
-              showMenu ? "bg-black text-white" : "bg-white"
+              showMenu ? "bg-black text-white" : "bg-[#FF0066] text-white"
             }`}
           >
             {showMenu ? "Close" : "Menu"}
@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3, ease: [0.45, 0, 0.55, 1] }}
-            className="flex flex-col fixed inset-0 items-center justify-center gap-4 text-4xl bg-white"
+            className="flex flex-col fixed inset-0 items-center justify-center gap-4 text-4xl bg-white text-black"
           >
             {Links.map((link, i) => (
               <motion.div
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
                   href={link.url}
                   className={`${
                     pathname === link.url &&
-                    "bg-black px-6 py-2 text-white rounded-full"
+                    "bg-[#FF0066] px-6 py-2 text-white rounded-full"
                   }`}
                   onClick={handleCloseMenu}
                 >
