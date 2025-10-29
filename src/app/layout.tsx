@@ -3,6 +3,7 @@ import { Electrolize } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import ScrollToTop from "./utils/ScrollToTop";
+import { ViewTransitions } from "next-view-transitions";
 
 const sedgewick = Electrolize({
   weight: ["400"],
@@ -22,17 +23,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <meta name="theme-color" content="#FF0066" /> {/* Set theme color */}
-      </head>
-      <body
-        className={`${sedgewick.className} antialiased bg-[#f5f5ff] text-black dark:bg-[#202938] dark:text-white`}
-      >
-        <Suspense>
-          <ScrollToTop>{children}</ScrollToTop>
-        </Suspense>
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <head>
+          <meta name="theme-color" content="#FF0066" /> {/* Set theme color */}
+        </head>
+        <body
+          className={`${sedgewick.className} antialiased bg-[#f5f5ff] text-black dark:bg-[#202938] dark:text-white`}
+        >
+          <Suspense>
+            <ScrollToTop>{children}</ScrollToTop>
+          </Suspense>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

@@ -19,7 +19,7 @@ const ScrollToTop = ({ children }: { children: React.ReactNode }) => {
   return (
     <ReactLenis root options={{ lerp: 0.05 }}>
       <Navbar />
-      {children}
+      <main>{children}</main>
       <Footer />
     </ReactLenis>
   );

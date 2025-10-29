@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { newsData } from "./Data";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const NewsPage = () => {
