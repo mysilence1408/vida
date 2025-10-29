@@ -13,6 +13,8 @@ import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+gsap.registerPlugin(useGSAP);
+
 const Navbar: React.FC = () => {
   const [hidden, setHidden] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
