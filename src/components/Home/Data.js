@@ -2,19 +2,22 @@ export const featuresData = [
   {
     id: 1,
     title: "One-Click AI Analysis",
-    description: "description1",
+    description:
+      "Run advanced AI analysis instantly with a single click, allowing medical data to be processed quickly and consistently. This feature helps healthcare professionals access reliable insights in real time, supporting informed decision-making while saving valuable time in clinical workflows.",
     image: "/images/feature1.jpg",
   },
   {
     id: 2,
     title: "Secure & Web-Based",
-    description: "description2",
+    description:
+      "Access the platform securely through the web, with no installation required. Built with strong data protection measures, Vida Medicals ensures sensitive medical information remains private, encrypted, and accessible only to authorized users.",
     image: "/images/feature2.jpg",
   },
   {
     id: 3,
     title: "Image Upload & Analysis",
-    description: "description3",
+    description:
+      "Upload medical images directly to the platform and receive AI-powered analysis within moments. The system processes images securely and efficiently, supporting accurate evaluation and faster clinical insights.",
     image: "/images/feature3.jpg",
   },
 ];

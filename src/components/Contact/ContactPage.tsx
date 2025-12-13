@@ -15,17 +15,14 @@ const ContactPage = () => {
             <div>
               <span className="text-xs font-light">/ General enquiries</span>
               <div className=" flex flex-col gap-2">
-                <span>info@thelinestudio.com</span>
-                <span>+442030020224</span>
+                <span>info@vidamedicals.com</span>
+                <span>+435324455634345</span>
               </div>
             </div>
             <div />
             <div>
               <span className="text-xs font-light">/ Address</span>
-              <p className=" max-w-sm text-xs text-balance">
-                The Line Animation Studio Ltd Studio 02, De Beauvoir Block 92-96
-                De Beauvoir Road London N1 4EN
-              </p>
+              <p className=" max-w-sm text-xs text-balance">Montreal, Canada</p>
             </div>
           </div>
           <div className=" lg:w-1/2 relative overflow-hidden">

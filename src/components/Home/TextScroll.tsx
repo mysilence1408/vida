@@ -11,7 +11,7 @@ const TextScroll = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const words = "Elysium is designed for the man who commands";
+  const words = "Using advanced AI to improve early disease detection";
 
   useGSAP(
     () => {
@@ -71,13 +71,13 @@ const TextScroll = () => {
   return (
     <div
       ref={componentRef}
-      className=" flex flex-col h-screen items-center justify-center bg-neutral-950 relative"
+      className=" flex flex-col h-screen items-center justify-center bg-[#0C1A27] relative"
     >
       <div className="glow-background absolute inset-0 z-0 h-full w-full opacity-0"></div>
       <div className="absolute inset-0 bg-[url('/images/noisetexture.jpg')] opacity-30 mix-blend-multiply"></div>
       <div ref={contentRef}>
         <div className=" mb-2 text-center text-sm tracking-wider text-neutral-200 uppercase md:mb-8 md:text-base">
-          Design Luxury
+          Early Detection Saves Lives
         </div>
         <div ref={textRef} className="text-center">
           <p className="font-display flex flex-wrap justify-center text-5xl leading-tight text-balance uppercase md:text-7xl">

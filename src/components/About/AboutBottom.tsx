@@ -49,7 +49,7 @@ const AboutBottom = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-4">
-          <div className="lg:w-1/2 h-[600px]">
+          <div className="lg:w-1/2">
             {/* Desktop controlled video */}
             <video
               ref={videoRef}
@@ -59,7 +59,7 @@ const AboutBottom = () => {
               loop={false}
               autoPlay={false}
               preload="auto"
-              className="h-full w-full object-cover rounded-lg hidden lg:block"
+              className="object-cover rounded-lg hidden lg:block h-full"
             />
             {/* Mobile autoplay version */}
             <video
@@ -73,28 +73,26 @@ const AboutBottom = () => {
             />
           </div>
 
-          <div className="py-16 px-4 gap-4 rounded-lg bg-white text-black flex flex-col justify-between items-center lg:w-1/2 h-auto">
-            <h6 className="text-3xl lg:text-4xl font-medium">
-              What is Vida Medicals?
-            </h6>
-            <p className="text-sm lg:text-base">
-              Vida Medical is a web-based medical image processing platform made
-              in Canada, designed to assist radiologists as an intelligent
-              companion.
+          <div className="py-16 px-4 gap-4 rounded-lg bg-white text-black  flex flex-col justify-between lg:w-1/2 h-auto">
+            <p className=" text-xl lg:text-2xl">
+              At Vida Medicals, our mission is to harness the power of
+              artificial intelligence to support earlier and more accurate
+              disease detection. By combining medical expertise with advanced
+              technology, we aim to assist healthcare professionals in making
+              better-informed decisions and improving patient outcomes.
               <br />
-              <br />
-              It integrates seamlessly with existing clinical workflows and
-              offers advanced AI tools that improve the accuracy, speed, and
-              security of mammography diagnostics.
-              <br />
-              <br />
-              The system was developed by a distinguished team of scientists and
-              engineers led by Dr. Naeem Komeilipoor, a renowned entrepreneur
-              and scientist. This platform evolved through years of innovation
-              in artificial intelligence, advanced imaging, and medical
-              technology — including innovations from AAVAA and Findora — to
-              support modern medical imaging practices.
+              <br /> This platform was created with a strong belief that
+              innovation in healthcare should be responsible, transparent, and
+              human-centered. We are committed to developing AI solutions that
+              complement clinical judgment and contribute meaningfully to modern
+              medicine.
             </p>
+            <span>
+              Dr. Komeilipoor
+              <br />
+              <br />
+              Founder & CEO, Vida Medicals
+            </span>
           </div>
         </div>
       </div>

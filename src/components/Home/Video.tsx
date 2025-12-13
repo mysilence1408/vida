@@ -16,7 +16,7 @@ const Video = () => {
   const y = useTransform(scrollYProgress, [0, 1], [-30, 0]);
   return (
     <div>
-      <div ref={containerRef} className="px-2 lg:px-4 pb-8 lg:pt-16 lg:pb-16">
+      <div ref={containerRef} className="px-2 lg:px-4 pb-8 pt-16 lg:pb-16">
         <div className=" max-w-7xl mx-auto">
           <motion.h3
             style={{ opacity: opacity, translateY: y }}

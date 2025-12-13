@@ -38,8 +38,7 @@ const Features: React.FC = () => {
             Our Features
           </h6>
           <p className="text-sm lg:text-lg">
-            A collection of short films and music videos made entirely with
-            Gen-4 to test the model’s narrative capabilities.
+            Designed to support accurate, reliable medical decision-making
           </p>
         </motion.div>
 

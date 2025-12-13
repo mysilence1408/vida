@@ -12,9 +12,9 @@ const NewsHero = () => {
             <h3 className=" text-3xl lg:text-7xl font-black">Newsroom page</h3>
           </div>
           <p className=" max-w-md text-balance font-semibold">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolor,
-            ut debitis repellendus facilis illum. Recusandae, consectetur? At
-            aspernatur ipsam reiciendis
+            Explore our newsroom for updates, insights, and announcements on how
+            AI is transforming healthcare and supporting earlier, more accurate
+            medical detection.
           </p>
         </div>
         <div className=" w-1/2 flex justify-end ">

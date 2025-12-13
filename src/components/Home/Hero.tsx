@@ -54,7 +54,7 @@ const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 1], ["100%", "120%"]);
 
   return (
-    <div className=" h-screen min-h-screen bg-black">
+    <div className=" min-h-screen] bg-black">
       <div className="flex flex-col gap-2 overflow-x-hidden">
         <div className=" overflow-hidden">
           <motion.div
@@ -80,7 +80,7 @@ const Hero = () => {
                 width={imageWidthTop}
                 height={200}
                 style={{ flexShrink: 0 }}
-                className=" object-cover object-center"
+                className=" object-cover object-center h-screen"
               />
             ))}
           </motion.div>
@@ -109,7 +109,7 @@ const Hero = () => {
                 width={imageWidthMiddle}
                 height={100}
                 style={{ flexShrink: 0 }}
-                className=" object-cover object-center"
+                className=" object-cover object-center h-screen"
               />
             ))}
           </motion.div>
