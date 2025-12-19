@@ -5,9 +5,9 @@ import { chooseData } from "./Data";
 const WhyChoose = () => {
   return (
     <div className="bg-black text-white">
-      <div className="py-8">
+      <div className="pt-8 pb-16">
         <h3 className="pb-16 px-2 lg:px-4 text-4xl lg:text-5xl">
-          Why Choose Vida Medicals?
+          Why Choose VIDA Medicals?
         </h3>
 
         <div className="grid grid-cols-1 lg:grid-cols-4">

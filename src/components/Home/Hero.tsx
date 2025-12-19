@@ -1,120 +1,46 @@
 "use client";
-import Image from "next/image";
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useState } from "react";
+import DemoModal from "./DemoModal";
+import { AnimatePresence } from "motion/react";
+
 const Hero = () => {
-  const imgScrollTop = [
-    {
-      id: 1,
-      src: "/videos/hero/1.mp4",
-    },
-    {
-      id: 2,
-      src: "/videos//hero/2.mp4",
-    },
-    {
-      id: 3,
-      src: "/videos//hero/3.mp4",
-    },
-    {
-      id: 4,
-      src: "/videos//hero/4.mp4",
-    },
-  ];
-  const imgScrollMiddle = [
-    {
-      id: 1,
-      src: "/videos//hero/5.mp4",
-    },
-    {
-      id: 2,
-      src: "/videos//hero/6.mp4",
-    },
-    {
-      id: 3,
-      src: "/videos//hero/7.mp4",
-    },
-    {
-      id: 4,
-      src: "/videos//hero/8.mp4",
-    },
-  ];
-
-  const imageWidthTop = 500;
-  const gapTop = 8; // Tailwind gap-2 = 0.5rem = 8px
-  const totalWidthTop = imgScrollTop.length * (imageWidthTop + gapTop);
-
-  const imageWidthMiddle = 400;
-  const gapMiddle = 8; // Tailwind gap-2 = 0.5rem = 8px
-  const totalWidthMiddle =
-    imgScrollMiddle.length * (imageWidthMiddle + gapMiddle);
-
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], ["100%", "120%"]);
-
+  const [showDemoModal, setShowDemoModal] = useState(false);
+  const handleRequestDemo = () => {
+    setShowDemoModal(true);
+  };
   return (
-    <div className=" min-h-screen] bg-black">
-      <div className="flex flex-col gap-2 overflow-x-hidden">
-        <div className=" overflow-hidden">
-          <motion.div
-            ref={ref}
-            className="flex gap-2"
-            style={{ width: totalWidthTop * 2, scale: scale }}
-            animate={{ x: [-0, -totalWidthTop] }}
-            transition={{
-              duration: 30,
-              repeat: Infinity,
-              ease: "linear",
-            }}
+    <div>
+      <div
+        className="h-screen w-full flex justify-start items-center px-4 lg:px-8 relative"
+        style={{
+          backgroundImage: 'url("/images/hero.jpeg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className=" bg-black/60 absolute inset-0" />
+        <div className="relative z-10 space-y-6">
+          <div className=" space-y-2.5">
+            <h3 className=" text-7xl  lg:text-9xl">
+              VIDA <br />
+              Medicals
+            </h3>
+            <p className=" text-xl lg:text-2xl">
+              Transforming Healthcare with AI
+            </p>
+          </div>
+          <button
+            onClick={handleRequestDemo}
+            className="cursor-pointer border-2 border-white rounded-full px-4 py-1 lg:hover:bg-white lg:hover:text-black transition-all duration-300 ease-in-out"
           >
-            {/* Duplicate the images for seamless looping */}
-            {[...imgScrollTop, ...imgScrollTop].map((img, idx) => (
-              <video
-                key={idx}
-                src={img.src}
-                autoPlay
-                muted
-                playsInline
-                loop
-                width={imageWidthTop}
-                height={200}
-                style={{ flexShrink: 0 }}
-                className=" object-cover object-center h-screen"
-              />
-            ))}
-          </motion.div>
-        </div>
-        <div className=" overflow-hidden">
-          <motion.div
-            ref={ref}
-            className="flex gap-2"
-            style={{ width: totalWidthMiddle * 2, scale: scale }}
-            animate={{ x: [-0, -totalWidthMiddle] }}
-            transition={{
-              duration: 30,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          >
-            {/* Duplicate the images for seamless looping */}
-            {[...imgScrollMiddle, ...imgScrollMiddle].map((img, idx) => (
-              <video
-                key={idx}
-                src={img.src}
-                autoPlay
-                muted
-                playsInline
-                loop
-                width={imageWidthMiddle}
-                height={100}
-                style={{ flexShrink: 0 }}
-                className=" object-cover object-center h-screen"
-              />
-            ))}
-          </motion.div>
+            Request Demo
+          </button>
         </div>
       </div>
+      <AnimatePresence>
+        {showDemoModal && <DemoModal onClose={() => setShowDemoModal(false)} />}
+      </AnimatePresence>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const Video = () => {
             style={{ opacity: opacity, translateY: y }}
             className=" pb-8 lg:pb-16 text-4xl lg:text-5xl font-medium text-white"
           >
-            What is Vida Medicals?
+            What is VIDA Medicals?
           </motion.h3>
           <motion.div
             style={{ scale: scale }}
@@ -51,16 +51,15 @@ const Video = () => {
             </div>
             <div className=" xl:w-1/5 py-6 px-2 gap-4">
               <p className=" text-sm lg:text-base">
-                Vida Medical is a Canadian web-based platform that assists
+                VIDA Medical is a Canadian web-based platform that assists
                 radiologists with intelligent medical image processing. It
                 integrates seamlessly into clinical workflows, using advanced AI
                 to enhance the accuracy, speed, and security of mammography
                 diagnostics.
                 <br />
                 <br />
-                Developed by Dr. Naeem Komeilipoor and his team, Vida builds on
-                years of innovation in AI, imaging, and medical technology —
-                including breakthroughs from AAVAA and Findora.
+                Developed by Dr. Naeem Komeilipoor and his team, VIDA builds on
+                years of innovation in AI, imaging, and medical technology.
               </p>
             </div>
           </motion.div>

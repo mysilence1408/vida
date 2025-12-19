@@ -2,7 +2,7 @@ export const carouselData = [
   {
     id: 1,
     title: "Mass Segmentation",
-    image: "/images/carousel/1.jpg",
+    image: "/images/carousel/1.webp",
   },
   {
     id: 2,
@@ -12,17 +12,17 @@ export const carouselData = [
   {
     id: 3,
     title: "Calcification Detection & Segmentation",
-    image: "/images/carousel/3.jpg",
+    image: "/images/carousel/3.webp",
   },
   {
     id: 4,
     title: "BI-RADS Classification",
-    image: "/images/carousel/4.webp",
+    image: "/images/carousel/4.jpg",
   },
   {
     id: 5,
     title: "Breast Density Evaluation",
-    image: "/images/carousel/5.webp",
+    image: "/images/carousel/5.jpg",
   },
   {
     id: 6,
@@ -32,12 +32,12 @@ export const carouselData = [
   {
     id: 7,
     title: "Asymmetry Detection",
-    image: "/images/carousel/7.avif",
+    image: "/images/carousel/7.jpg",
   },
   {
     id: 8,
     title: "Tumor Localization Based on Anatomical Context",
-    image: "/images/carousel/8.webp",
+    image: "/images/carousel/8.jpg",
   },
   {
     id: 9,

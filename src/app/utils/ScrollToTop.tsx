@@ -5,6 +5,7 @@ import { ReactLenis, useLenis } from "./lenis";
 
 import Navbar from "@/components/Global/Navbar";
 import Footer from "@/components/Global/Footer";
+import { Toaster } from "react-hot-toast";
 
 const ScrollToTop = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
@@ -18,6 +19,7 @@ const ScrollToTop = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <ReactLenis root options={{ lerp: 0.05 }}>
+      <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
       <main>{children}</main>
       <Footer />

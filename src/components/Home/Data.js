@@ -23,10 +23,9 @@ export const featuresData = [
 ];
 
 import { LuBrainCircuit } from "react-icons/lu";
-import { RiStethoscopeFill } from "react-icons/ri";
-import { TbReportSearch } from "react-icons/tb";
-import { FaGear } from "react-icons/fa6";
-import { FiRefreshCcw } from "react-icons/fi";
+import { LuClipboardCheck } from "react-icons/lu";
+import { ImLoop2 } from "react-icons/im";
+import { LuWorkflow } from "react-icons/lu";
 
 export const chooseData = [
   {
@@ -39,32 +38,25 @@ export const chooseData = [
   },
   {
     id: 2,
-    title: "Physician Review",
-    description: "Physicians can review or modify AI findings",
-    icon: <RiStethoscopeFill size={50} />,
+    title: "Physician Review & Reports",
+    description:
+      "AI generates reports, and physicians review and refine the results",
+    icon: <LuClipboardCheck size={50} />,
     color: "#0046FF",
   },
   {
     id: 3,
-    title: "Automated Reporting",
-    description:
-      "Automatic report generation including annotated images and segmentations",
-    icon: <TbReportSearch size={50} />,
+    title: "Workflow Adaptation",
+    description: "Customizable & evolving based on your workflow",
+    icon: <LuWorkflow size={50} />,
     color: "#08CB00",
   },
   {
     id: 4,
-    title: "Workflow Adaptation",
-    description: "Customizable & evolving based on your workflow",
-    icon: <FaGear size={50} />,
-    color: "#F25912",
-  },
-  {
-    id: 5,
     title: "Continuous Improvement",
     description: "Regular AI model updates based on user feedback and new data",
-    icon: <FiRefreshCcw size={50} />,
-    color: "#E53888",
+    icon: <ImLoop2 size={50} />,
+    color: "#F25912",
   },
 ];
 

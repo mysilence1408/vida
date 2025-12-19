@@ -26,7 +26,7 @@ const Footer = () => {
     <div className=" bg-black px-2 md:px-4 py-4">
       <div className=" flex justify-between items-center">
         <span className=" text-[#867f80] text-xs font-black">
-          © 2025. Vida Medicals. All Rights Reserved.
+          © 2025. VIDA Medicals. All Rights Reserved.
         </span>
         <div className=" text-white flex items-center gap-4">
           {socialIcons.map((icon, index) => (
