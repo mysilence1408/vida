@@ -41,7 +41,6 @@ const Navbar: React.FC = () => {
   useGSAP(() => {
     gsap.to(".nav", {
       opacity: "95%",
-      delay: 2,
       stagger: {
         amount: 1,
         ease: "power1.inOut",
