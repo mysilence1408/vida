@@ -10,7 +10,7 @@ const WhyChoose = () => {
           Why Choose VIDA Medicals?
         </h3>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3">
           {chooseData.map((choosen, index) => (
             <div
               key={choosen.id}

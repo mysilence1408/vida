@@ -9,12 +9,12 @@ const NewsHero = () => {
             <div className=" bg-[#eae4d8] px-2 py-1 rounded-lg text-xl w-fit">
               News
             </div>
-            <h3 className=" text-3xl lg:text-7xl font-black">Newsroom page</h3>
+            <h3 className=" text-3xl lg:text-7xl font-black">Newsroom</h3>
           </div>
           <p className=" max-w-md text-balance font-semibold">
-            Explore our newsroom for updates, insights, and announcements on how
-            AI is transforming healthcare and supporting earlier, more accurate
-            medical detection.
+            Explore the VIDA Medicals newsroom for updates on our mammography AI
+            platform, technical progress, and the future of responsible AI in
+            medical imaging.
           </p>
         </div>
         <div className=" w-1/2 flex justify-end ">

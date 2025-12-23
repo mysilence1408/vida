@@ -15,8 +15,12 @@ const ContactPage = () => {
             <div>
               <span className="text-xs font-light">/ General enquiries</span>
               <div className=" flex flex-col gap-2">
-                <span>info@vidamedicals.com</span>
-                <span>+435324455634345</span>
+                <a
+                  href="mailto:info@vidamedicals.com"
+                  className=" cursor-pointer"
+                >
+                  info@vidamedicals.com
+                </a>
               </div>
             </div>
             <div />

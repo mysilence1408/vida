@@ -1,7 +1,7 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 export const newsData = [
-  {
+  /* {
     id: 0,
     slug: "launch",
     date: "May 1st, 2025",
@@ -157,4 +157,5 @@ export const newsData = [
       </>
     ),
   },
+   */
 ];

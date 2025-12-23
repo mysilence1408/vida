@@ -1,62 +1,54 @@
 export const featuresData = [
   {
     id: 1,
-    title: "One-Click AI Analysis",
+    title: "One Click AI Analysis",
     description:
-      "Run advanced AI analysis instantly with a single click, allowing medical data to be processed quickly and consistently. This feature helps healthcare professionals access reliable insights in real time, supporting informed decision-making while saving valuable time in clinical workflows.",
+      "Run AI analysis instantly to highlight regions of interest, suspicious patterns, and key image indicators.",
     image: "/images/feature1.jpg",
   },
   {
     id: 2,
-    title: "Secure & Web-Based",
+    title: "Secure Web Based Platform",
     description:
-      "Access the platform securely through the web, with no installation required. Built with strong data protection measures, Vida Medicals ensures sensitive medical information remains private, encrypted, and accessible only to authorized users.",
+      "Access the platform securely through the web with strong encryption, data protection, and controlled user access.",
     image: "/images/feature2.jpg",
   },
   {
     id: 3,
-    title: "Image Upload & Analysis",
+    title: "Image Upload and Processing",
     description:
-      "Upload medical images directly to the platform and receive AI-powered analysis within moments. The system processes images securely and efficiently, supporting accurate evaluation and faster clinical insights.",
+      "Upload mammography images and receive AI generated insights within moments, supporting fast and secure image analysis.",
     image: "/images/feature3.jpg",
   },
 ];
 
-import { LuBrainCircuit } from "react-icons/lu";
-import { LuClipboardCheck } from "react-icons/lu";
 import { ImLoop2 } from "react-icons/im";
-import { LuWorkflow } from "react-icons/lu";
+import { MdInsights } from "react-icons/md";
+import { BiClinic } from "react-icons/bi";
 
 export const chooseData = [
   {
     id: 1,
-    title: "AI Report Generation",
+    title: "Structured Insight Output",
     description:
-      "Turns AI results into structured, physician-validated reports",
-    icon: <LuBrainCircuit size={50} />,
+      "From image upload to customized structured output within seconds.",
+    icon: <MdInsights size={50} />,
     color: "#DC143C",
   },
   {
     id: 2,
-    title: "Physician Review & Reports",
+    title: "Designed for Mammography Practice",
     description:
-      "AI generates reports, and physicians review and refine the results",
-    icon: <LuClipboardCheck size={50} />,
+      "Fits naturally into mammography reading routines and existing clinical processes.",
+    icon: <BiClinic size={50} />,
     color: "#0046FF",
   },
   {
     id: 3,
-    title: "Workflow Adaptation",
-    description: "Customizable & evolving based on your workflow",
-    icon: <LuWorkflow size={50} />,
-    color: "#08CB00",
-  },
-  {
-    id: 4,
     title: "Continuous Improvement",
-    description: "Regular AI model updates based on user feedback and new data",
+    description: "Models evolve through evaluation, feedback, and new data.",
     icon: <ImLoop2 size={50} />,
-    color: "#F25912",
+    color: "#08CB00",
   },
 ];
 
@@ -64,22 +56,23 @@ export const benefitsData = [
   {
     id: 1,
     title: "Time Savings",
-    description: "Significant reduction in radiology report writing time",
+    description: "Reduces time spent on repetitive image analysis tasks.",
   },
   {
     id: 2,
-    title: "Improved Diagnostic Accuracy",
-    description: "AI-powered support for clinical decision-making",
+    title: "Consistency",
+    description:
+      "Supports more consistent mammography image analysis across cases.",
   },
   {
     id: 3,
-    title: "Full Patient Privacy",
-    description: "No identifiable data stored on the cloud",
+    title: "Patient Privacy",
+    description: "No identifiable patient data stored on the cloud.",
   },
   {
     id: 4,
     title: "Canadian Innovation",
-    description: "Built by Canadian experts in medical imaging and AI",
+    description: "Developed by Canadian experts in AI and medical imaging.",
   },
 ];
 import { FaFileImage, FaClinicMedical, FaTools } from "react-icons/fa";
@@ -98,12 +91,12 @@ export const whoData = [
   },
   {
     id: 3,
-    desc: "Researchers in Breast Cancer Detection using AI",
+    desc: "Researchers working on mammography and AI",
     icon: <GiArtificialIntelligence size={40} />,
   },
   {
     id: 4,
-    desc: "Centers seeking faster, more accurate, and secure reporting tools",
+    desc: "Centers seeking secure AI assisted mammography tools",
     icon: <FaTools size={40} />,
   },
 ];

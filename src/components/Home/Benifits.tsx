@@ -8,7 +8,7 @@ const Benefits = () => {
       <div className=" lg:w-1/2">
         <Image src={handImg} alt="handImg" className=" object-cover h-screen" />
       </div>
-      <div className=" lg:w-1/2 flex flex-col p-8 justify-between">
+      <div className=" lg:w-1/2 flex flex-col p-8 justify-evenly">
         <h3 className=" text-5xl lg:text-6xl font-semibold uppercase pb-8 lg:pb-0">
           Benefits
         </h3>

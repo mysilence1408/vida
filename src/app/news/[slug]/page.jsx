@@ -19,7 +19,7 @@ export async function generateMetadata({ params: paramsPromise }) {
     };
   }
 
-  const domain = "https://findora.ai";
+  const domain = "https://vidamedicals.com";
   const url = `${domain}/news/${params.slug}`;
 
   const absoluteImage = post.img.startsWith("http")
@@ -28,10 +28,10 @@ export async function generateMetadata({ params: paramsPromise }) {
 
   return {
     title: post.title,
-    description: "Findora Launch Announcement",
+    description: "VIDA Medicals Launch Announcement",
     openGraph: {
       title: post.title,
-      description: "Findora is live! Discover how it's changing search.",
+      description: "VIDA Medicals is live! Discover how it's changing Health.",
       url,
       type: "article",
       images: [
@@ -46,7 +46,7 @@ export async function generateMetadata({ params: paramsPromise }) {
     twitter: {
       card: "summary_large_image",
       title: post.title,
-      description: "Findora is live! Discover how it's changing search.",
+      description: "VIDA Medicals is live! Discover how it's changing health.",
       images: [absoluteImage],
     },
   };
@@ -60,7 +60,7 @@ const CardPage = async ({ params: paramsPromise }) => {
     notFound();
   }
 
-  const domain = "https://findora.ai";
+  const domain = "https://vidamedicals.com";
   const currentUrl = `${domain}/news/${params.slug}`;
 
   const shareLinks = {

@@ -38,7 +38,7 @@ const Features: React.FC = () => {
             Our Features
           </h6>
           <p className="text-sm lg:text-lg">
-            Designed to support accurate, reliable medical decision-making
+            Designed to support accurate, reliable medical decision making
           </p>
         </motion.div>
 
@@ -73,7 +73,7 @@ const Features: React.FC = () => {
         </div>
       </div>
 
-      {/* 🟣 Modal with Framer Motion */}
+      {/* Modal */}
       <AnimatePresence>
         {selectedFeature && (
           <motion.div
@@ -109,7 +109,7 @@ const Features: React.FC = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25 }}
-                className="text-sm mb-6 leading-relaxed"
+                className="text-xl mb-6 leading-relaxed"
               >
                 {selectedFeature.description}
               </motion.p>

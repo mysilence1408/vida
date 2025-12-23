@@ -10,15 +10,7 @@ const Hero = () => {
   };
   return (
     <div>
-      <div
-        className="h-screen w-full flex justify-start items-center px-4 lg:px-8 relative"
-        style={{
-          backgroundImage: 'url("/images/hero.jpeg")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <div className="h-screen w-full flex justify-start items-center px-4 lg:px-8 relative bg-[url(/images/heroMobile.jpeg)] lg:bg-[url(/images/hero.jpeg)] bg-cover bg-center bg-no-repeat">
         <div className=" bg-black/60 absolute inset-0" />
         <div className="relative z-10 space-y-6">
           <div className=" space-y-2.5">
@@ -26,8 +18,10 @@ const Hero = () => {
               VIDA <br />
               Medicals
             </h3>
-            <p className=" text-xl lg:text-2xl">
-              Transforming Healthcare with AI
+            <p className=" text-sm lg:text-lg">
+              Accurate AI models for mammography
+              <br />
+              Using advanced AI to support mammography image analysis
             </p>
           </div>
           <button
