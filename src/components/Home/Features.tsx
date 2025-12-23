@@ -49,7 +49,7 @@ const Features: React.FC = () => {
               <img
                 src={feature.image}
                 alt={feature.title}
-                className="w-full h-full object-cover"
+                className="w-full h-[700px] object-cover object-center"
               />
 
               <div className="absolute z-20 inset-0 w-fit h-fit m-auto">
@@ -62,7 +62,7 @@ const Features: React.FC = () => {
 
               <button
                 onClick={() => setSelectedFeature(feature)}
-                className="absolute left-0 right-0 bottom-40 lg:inset-0 w-fit h-fit m-auto border-2 border-white text-sm px-2 py-1 rounded-2xl cursor-pointer hover:bg-white hover:text-black transition-all duration-300 ease-in-out lg:opacity-0 group-hover:opacity-100 z-50"
+                className="absolute left-0 right-0 bottom-60 lg:inset-0 w-fit h-fit m-auto border-2 border-white text-sm px-2 py-1 rounded-2xl cursor-pointer hover:bg-white hover:text-black transition-all duration-300 ease-in-out lg:opacity-0 group-hover:opacity-100 z-50"
               >
                 Show more
               </button>

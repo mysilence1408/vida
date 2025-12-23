@@ -8,6 +8,7 @@ const Hero = () => {
   const handleRequestDemo = () => {
     setShowDemoModal(true);
   };
+
   return (
     <div>
       <div className="h-screen w-full flex justify-start items-center px-4 lg:px-8 relative bg-[url(/images/heroMobile.jpeg)] lg:bg-[url(/images/hero.jpeg)] bg-cover bg-center bg-no-repeat">

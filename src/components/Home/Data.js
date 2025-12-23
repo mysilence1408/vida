@@ -18,7 +18,7 @@ export const featuresData = [
     title: "Image Upload and Processing",
     description:
       "Upload mammography images and receive AI generated insights within moments, supporting fast and secure image analysis.",
-    image: "/images/feature3.jpg",
+    image: "/images/feature3.png",
   },
 ];
 

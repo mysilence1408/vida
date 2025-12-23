@@ -25,12 +25,6 @@ body {
   color: white;
 }
 
-@layer base {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 /* Background Effects */
 .glow-background {
   background-color: hsla(0, 0%, 0%, 0);
