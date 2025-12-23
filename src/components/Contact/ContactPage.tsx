@@ -50,48 +50,50 @@ const ContactPage = () => {
       );
   };
   return (
-    <div className=" bg-[url('/images/contact-bg.jpg')] bg-cover h-screen w-full relative">
-      <div className=" bg-white/70 absolute lg:bottom-0 lg:right-0 w-auto h-auto text-black">
-        <div className=" pl-2 pt-10">
+    <div className=" bg-[url('/images/contact-bg.jpg')] bg-cover min-h-screen w-full relative">
+      <div className=" bg-white/70 relative lg:absolute lg:bottom-0 lg:right-0 w-full lg:w-auto max-w-6xl mx-auto lg:mx-0 h-auto text-black  rounded-lg lg:rounded-none">
+        <div className=" pl-2 pt-10 lg:pt-0">
           <span className=" text-xs font-light"> Contact</span>
-          <h3 className=" text-8xl lg:text-9xl font-black">{"Let's"} talk</h3>
+          <h3 className=" text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black leading-tight">
+            {"Let's"} talk
+          </h3>
         </div>
-        <div className=" flex flex-col lg:flex-row items-center gap-4 ">
-          <div className=" flex flex-col gap-2 lg:w-1/2 pl-4">
+        <div className=" flex flex-col lg:flex-row items-start gap-6 mt-6 ">
+          <div className=" flex flex-col gap-4 lg:w-1/2 w-full px-2 lg:pl-4">
             <div>
               <span className="text-xs font-light">General enquiries</span>
               <div className=" flex flex-col gap-2">
                 <form
                   ref={form}
                   onSubmit={sendEmail}
-                  className="flex flex-col gap-6"
+                  className="flex flex-col gap-6 pt-5"
                 >
-                  <div className="flex flex-col lg:flex-row justify-between gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex flex-col w-full gap-1">
-                      <label className="self-start text-sm font-semibold">
+                      <label className="self-start text-xs font-semibold">
                         Your Name
                       </label>
                       <input
                         type="text"
                         name="user_name"
-                        className="outline-none border-2 border-black/20 rounded-lg focus:border-red-600 py-1 px-2"
+                        className="outline-none border-2 border-black/20 rounded-lg focus:border-red-600 py-2 px-3"
                         required
                       />
                     </div>
                     <div className="flex flex-col w-full gap-1">
-                      <label className="self-start text-sm font-semibold">
+                      <label className="self-start text-xs font-semibold">
                         Your E-mail
                       </label>
                       <input
                         type="email"
                         name="user_email"
-                        className="outline-none border-2 border-black/20 rounded-lg focus:border-red-600 py-1 px-2"
+                        className="outline-none border-2 border-black/20 rounded-lg focus:border-red-600 py-2 px-3"
                         required
                       />
                     </div>
                   </div>
                   <div className="w-full flex flex-col gap-1">
-                    <label className="self-start text-sm font-semibold">
+                    <label className="self-start text-xs font-semibold">
                       Message
                     </label>
                     <textarea
@@ -99,11 +101,11 @@ const ContactPage = () => {
                       required
                       cols={30}
                       rows={4}
-                      className="w-full outline-none border-2 border-black/20 rounded-lg focus:border-red-600 py-1 px-2"
+                      className="w-full outline-none border-2 border-black/20 rounded-lg focus:border-red-600 py-2 px-3"
                     ></textarea>
                   </div>
                   <div>
-                    <button className=" cursor-pointer bg-purple-600 rounded-md px-2 py-1 text-white hover:bg-purple-700 transition-colors duration-300 ease-in-out">
+                    <button className=" cursor-pointer bg-purple-600 rounded-md px-4 py-2 text-white hover:bg-purple-700 transition-colors duration-300 ease-in-out w-full md:w-auto">
                       send
                     </button>
                   </div>
@@ -116,13 +118,13 @@ const ContactPage = () => {
               <p className=" max-w-sm text-xs text-balance">Montreal, Canada</p>
             </div>
           </div>
-          <div className=" lg:w-1/2 relative overflow-hidden">
+          <div className=" lg:w-1/2 relative overflow-hidden w-full p-0 m-0">
             <Image
               src={telephoneImg}
               alt="telephoneImg"
-              className=" w-[700px] h-[338px] object-cover object-center"
+              className=" block w-full h-full object-cover object-center"
             />
-            <div className=" absolute bottom-0 right-0 bg-[#e90000]/60 w-[400px] h-[180px]" />
+            <div className=" absolute bottom-0 right-0 bg-[#e90000]/60 w-2/3 h-1/2 md:w-[400px] md:h-[180px]" />
           </div>
         </div>
       </div>
