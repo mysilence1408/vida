@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About",
   description:
     "VIDA Medicals is a Canadian mammography AI platform delivering a reliable second look and structured imaging insights for breast screening.",
 };
