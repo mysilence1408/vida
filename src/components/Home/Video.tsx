@@ -51,7 +51,7 @@ const Video = () => {
             </div>
             <div className=" xl:w-1/5 py-6 px-2 gap-4">
               <p className=" text-xl lg:text-2xl">
-                VIDA Medicals is a Canadian AI platform developing accurate AI
+                VIDA Medicals is a Canadian platform developing accurate AI
                 models for mammography that analyze imaging features and
                 patterns to provide a reliable second look and structured
                 insights.

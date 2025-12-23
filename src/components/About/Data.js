@@ -12,7 +12,7 @@ export const carouselData = [
   {
     id: 3,
     title: "Breast density evaluation",
-    image: "/images/carousel/3.webp",
+    image: "/images/carousel/3.png",
   },
   {
     id: 4,

@@ -20,8 +20,6 @@ const Hero = () => {
               Medicals
             </h3>
             <p className=" text-sm lg:text-lg">
-              Accurate AI models for mammography
-              <br />
               Using advanced AI to support mammography image analysis
             </p>
           </div>
