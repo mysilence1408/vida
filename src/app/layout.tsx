@@ -13,7 +13,7 @@ const sedgewick = Electrolize({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vidamedicals.com"),
+  metadataBase: new URL("https://vida-seven.vercel.app"),
   title: {
     default: "VIDA Medicals",
     template: "%s | VIDA Medicals",
