@@ -20,9 +20,6 @@ export const metadata: Metadata = {
   },
   description:
     "VIDA Medicals is a Canadian AI platform building accurate mammography models that deliver a reliable second look and structured imaging insights.",
-  twitter: {
-    card: "summary_large_image",
-  },
 };
 
 export default function RootLayout({
