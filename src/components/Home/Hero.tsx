@@ -19,8 +19,8 @@ const Hero = () => {
               VIDA <br />
               Medicals
             </h3>
-            <p className=" text-sm lg:text-lg">
-              Using advanced AI to support mammography image analysis
+            <p className="text-lg lg:text-2xl">
+              Accurate AI models for mammography
             </p>
           </div>
           <button

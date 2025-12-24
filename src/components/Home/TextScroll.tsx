@@ -11,7 +11,7 @@ const TextScroll = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const words = "Using advanced AI to improve early disease detection";
+  const words = "Using advanced AI to support mammography image analysis";
 
   useGSAP(
     () => {
