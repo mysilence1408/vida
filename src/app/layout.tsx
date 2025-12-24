@@ -12,6 +12,10 @@ const sedgewick = Electrolize({
   display: "swap",
 });
 
+export const metadataBase = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vida-seven.vercel.app"
+);
+
 export const metadata: Metadata = {
   title: {
     default: "VIDA Medicals",
@@ -21,6 +25,23 @@ export const metadata: Metadata = {
     "VIDA Medicals is a Canadian AI platform building accurate mammography models that deliver a reliable second look and structured imaging insights.",
   twitter: {
     card: "summary_large_image",
+    images: ["/images/hero.jpeg"],
+  },
+  openGraph: {
+    title: "VIDA Medicals",
+    description:
+      "VIDA Medicals is a Canadian AI platform building accurate mammography models that deliver a reliable second look and structured imaging insights.",
+    url: "/",
+    siteName: "VIDA Medicals",
+    type: "website",
+    images: [
+      {
+        url: "/images/hero.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "VIDA Medicals OG image",
+      },
+    ],
   },
 };
 
